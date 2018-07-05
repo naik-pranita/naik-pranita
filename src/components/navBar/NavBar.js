@@ -56,7 +56,7 @@ const NavBar = () => {
                         <span className='link-text' onClick={onClick} data-target='contact'>Contact</span>
                     </i>
                 </NavItem>
-                <NavItem eventKey={7} href='#' className='link experience-link'>
+                <NavItem eventKey={7} href='/assets/Pranita_Naik.pdf' target='_blank' className='link experience-link'>
                     <i className='fas fa-file-alt'>
                         <span className='link-text'>Resume</span>
                     </i>
