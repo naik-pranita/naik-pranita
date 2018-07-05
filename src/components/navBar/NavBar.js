@@ -14,9 +14,10 @@ const NavBar = () => {
                 <Nav>
                     <NavItem eventKey={1} href='#' className='introduction text-uppercase'>
 
-                        <div className='hidden-xs img-container'><img data-target='about' className='avatar'
-                                                                      src='/assets/images/pranita.jpg'/></div>
-                        <span className='title'>Pranita Naik</span><span
+                        <div className='hidden-xs img-container' onClick={onClick} data-target='about'><img
+                            data-target='about' className='avatar'
+                            src='/assets/images/pranita.jpg'/></div>
+                        <span className='title' onClick={onClick} data-target='about'>Pranita Naik</span><span
                         className='sub-title hidden-xs'>Frontend Developer</span>
                     </NavItem>
                 </Nav>
