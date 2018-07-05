@@ -3756,6 +3756,10 @@ pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
 
+ptjs@0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/ptjs/-/ptjs-0.2.4.tgz#1d14dec951705003be8938671ab073004545c51a"
+
 public-encrypt@^4.0.0:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/public-encrypt/-/public-encrypt-4.0.2.tgz#46eb9107206bf73489f8b85b69d91334c6610994"
@@ -3886,7 +3890,7 @@ react-prop-types@^0.4.0:
   dependencies:
     warning "^3.0.0"
 
-react-transition-group@^2.0.0, react-transition-group@^2.2.0:
+react-transition-group@2.4.0, react-transition-group@^2.0.0, react-transition-group@^2.2.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.4.0.tgz#1d9391fabfd82e016f26fabd1eec329dbd922b5a"
   dependencies:

@@ -1,0 +1,97 @@
+
+about {
+    width: 100%;
+    padding: 0 10px;
+    color: #fff;
+    height: calc(100vh + 30px);
+    left: 0;
+}
+
+.about .intro {
+    z-index: 1;
+    line-height: 1.2;
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+@media (min-width: 991px) {
+    .about .intro {
+        font-size: 3em;
+    }
+}
+
+.about .intro p {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 17em;
+    animation: type 3.5s steps(60, end);
+}
+
+.about .intro p:nth-child(2) {
+    animation: type2 3.5s steps(60, end);
+}
+
+.about .view-profile-button {
+    background: transparent;
+    color: white;
+    font-family: "Roboto";
+    padding: 0.5em 4em;
+}
+
+.about .view-profile-button:active, .about .view-profile-button:focus {
+    background: transparent;
+    color: white;
+    font-family: "Roboto-Thin";
+    padding: 0.5em 4em;
+    outline: none;
+}
+
+.about .view-profile-button:hover {
+    color: white;
+    background-color: #04c2c9;
+}
+
+.about .view-profile-button .btn-name {
+    font-size: 1.2em;
+}
+
+.about .view-profile-button .fa-arrow-down {
+    transition: transform 10s;
+    margin: 0;
+}
+
+.about .view-profile-button span {
+    animation-duration: 1s;
+    animation-name: changewidth;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes type {
+    from {
+        width: 20px;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes changewidth {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+

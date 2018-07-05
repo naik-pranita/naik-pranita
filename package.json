@@ -28,8 +28,10 @@
     },
     "dependencies": {
         "font-awesome": "4.7.0",
+        "ptjs": "0.2.4",
         "react": "16.2.0",
         "react-bootstrap": "0.32.1",
-        "react-dom": "16.2.0"
+        "react-dom": "16.2.0",
+        "react-transition-group": "2.4.0"
     }
 }
