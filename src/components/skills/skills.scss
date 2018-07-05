@@ -1,0 +1,30 @@
+.skills .skills-content {
+    font-size: 1.3em;
+    padding: 2em;
+    line-height: 1.5em;
+}
+
+@media (min-width: 768px) {
+    .skills .skills-content {
+        padding: 3em;
+    }
+}
+
+.skills .canvas-container .skills-canvas {
+    width: 260px;
+    height: 260px;
+}
+
+@media (min-width: 480px) {
+    .skills .canvas-container .skills-canvas {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .skills .canvas-container .skills-canvas {
+        width: 450px;
+        height: 450px;
+    }
+}
