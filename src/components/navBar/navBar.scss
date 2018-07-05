@@ -1,0 +1,147 @@
+.navbar-brand {
+    margin: 0 auto;
+    padding: 0.4em;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand > .introduction > a {
+    display: flex;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand > .introduction > a {
+        flex-direction: column;
+    }
+}
+
+.nav.navbar-nav > li > a {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .app-container .navbar {
+        max-width: 13em;
+        min-height: 100vh;
+        margin-bottom: 0;
+        border-radius: 0;
+        display: inline-block;
+        position: fixed;
+        color: white;
+    }
+
+    .container > .navbar-header,
+    .nav.navbar-nav,
+    .nav.navbar-nav > li {
+        float: none;
+        height: auto;
+    }
+
+    .container > .navbar-header > a,
+    .nav.navbar-nav > a,
+    .nav.navbar-nav > li > a {
+        padding: 0;
+    }
+
+    .nav.navbar-nav {
+        text-align: left;
+        background: white;
+    }
+
+    .container > .navbar-header {
+        text-align: center;
+    }
+
+    .navbar-header > .navbar-brand {
+        float: none;
+    }
+
+    .navbar > .container .navbar-brand.nav,
+    .navbar > .container-fluid .navbar-brand.nav {
+        margin-left: 0;
+        background: #fafafa;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .navbar > .container {
+        width: 13em;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+.navbar .img-container .avatar {
+    border-radius: 50%;
+    height: 9em;
+    box-shadow: 0px 4px 6px 2px lightgrey;
+}
+
+.navbar .title {
+    font-family: 'Roboto', sans-serif;
+    color: teal;
+    font-size: 1.1em;
+}
+
+@media (min-width: 991px) {
+    .navbar .title {
+        line-height: 1.5em;
+    }
+}
+
+.navbar .sub-title {
+    color: #795548;
+    line-height: 1.5em;
+    font-size: 0.7em;
+}
+
+.navbar .link-text {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    padding-left: 1em;
+}
+
+.navbar .link:hover {
+    border-left: 3px solid;
+    font-weight: bold;
+    cursor: pointer;
+    background: #efefef;
+}
+
+.navbar .about-link,
+.navbar .fa-user {
+    color: #008073;
+}
+
+.navbar .experience-link,
+.navbar .fa-chart-line {
+    color: #00bcd4;
+}
+
+.navbar .projects-link,
+.navbar .fa-columns {
+    color: #444;
+}
+
+.navbar .skills-link,
+.navbar .fa-chart-bar {
+    color: #9c27b0;
+}
+
+.navbar .education-link,
+.navbar .fa-graduation-cap {
+    color: #ff9800;
+}
+
+.navbar .contact-link,
+.navbar .fa-envelope {
+    color: #795548;
+}
+
+.navbar .resume-link,
+.navbar .fa-file-alt {
+    color: #424242;
+}

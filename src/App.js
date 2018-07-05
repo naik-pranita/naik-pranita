@@ -3,21 +3,50 @@ import ReactDOM from 'react-dom';
 import {CSSTransition} from 'react-transition-group';
 import './app.scss';
 
-
 import About from './components/about/About';
+import NavBar from './components/navBar/NavBar';
 
 class App extends React.Component {
     constructor() {
         super();
+        this.state = {
+            showContent: false
+        };
+
+        this.onClick = this.onClick.bind(this);
+    }
+
+    onClick() {
+        this.setState({showContent: true}, () => {
+            document.getElementById('experience').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+            });
+        });
+
     }
 
     render() {
         return (
-            <div className='main left-align'>
-                <About/>
-                <CSSTransition timeout={500} classNames='app'>
-                    <h2>How are you?</h2>
-                </CSSTransition>
+            <div className='app-container'>
+                <div>
+                    <CSSTransition
+                        in={this.state.showContent}
+                        timeout={500}
+                        classNames='content'
+                        unmountOnExit={true}
+                    >
+                        <NavBar/>
+                    </CSSTransition>
+                    <div className={`main ${this.state.showContent ? 'left-align' : 'center-align'}`}>
+                        <About onClick={this.onClick}/>
+
+                        {this.state.showContent && <main>
+                            <div id='experience' className='component flex experience'>Experience</div>
+                        </main>}
+                    </div>
+                </div>
             </div>
         );
     }

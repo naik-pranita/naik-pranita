@@ -1,5 +1,6 @@
 @import './components/about/about';
 @import './components/canvas/canvas';
+@import './components/navBar/navBar';
 
 body {
     margin: 0;
@@ -7,7 +8,7 @@ body {
     height: 100vh;
     color: white;
     font-size: 1.1em;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 480px) {
@@ -18,7 +19,7 @@ body {
 
 section {
     position: relative;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 2em 0;
 }
 
@@ -57,7 +58,7 @@ ul {
     width: 100%;
     margin: 0;
     color: white;
-    min-height: 600px;
+    min-height: 100vh;
 }
 
 
@@ -71,6 +72,25 @@ ul {
     .fas, .fab {
         margin: 1em;
     }
+}
+
+
+.content-appear {
+    opacity: 0.01;
+}
+
+.content-appear.content-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.content-enter {
+    opacity: 0.01;
+}
+
+.content-enter.content-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
 }
 
 
