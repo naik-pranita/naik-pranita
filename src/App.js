@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import {CSSTransition} from 'react-transition-group';
 import './app.scss';
 
-import About from './components/about/About';
 import NavBar from './components/navBar/NavBar';
+import About from './components/about/About';
+import Main from './components/main/Main';
 
 class App extends React.Component {
     constructor() {
@@ -41,10 +42,7 @@ class App extends React.Component {
                     </CSSTransition>
                     <div className={`main ${this.state.showContent ? 'left-align' : 'center-align'}`}>
                         <About onClick={this.onClick}/>
-
-                        {this.state.showContent && <main>
-                            <div id='experience' className='component flex experience'>Experience</div>
-                        </main>}
+                        {this.state.showContent && <Main/>}
                     </div>
                 </div>
             </div>
