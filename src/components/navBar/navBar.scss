@@ -16,8 +16,13 @@
     }
 }
 
-.nav.navbar-nav > li > a {
-    padding: 0;
+.nav.navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    & > li > a {
+        padding: 0;
+    }
 }
 
 @media (min-width: 768px) {
@@ -146,10 +151,15 @@
 .navbar .fa-file-alt {
     color: #424242;
 }
+
 .navbar {
     .fas, .fab {
         padding-left: 0.5em;
         width: 100%;
         margin: 0;
     }
+}
+
+.navbar-fixed-top .navbar-collapse {
+    max-height: 360px;
 }
