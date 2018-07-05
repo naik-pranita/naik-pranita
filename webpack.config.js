@@ -13,6 +13,10 @@ module.exports = {
 		path: PATH.join(outputPath + '/build/')
 	},
 	plugins: [
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify('production')
+        }),
+        new webpack.optimize.UglifyJsPlugin(),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'common',
 			filename: 'common.vendor.js',
