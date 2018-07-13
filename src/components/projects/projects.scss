@@ -1,0 +1,33 @@
+.projects {
+    padding: 0 2em;
+    font-size: 1.2em;
+    color: white;
+
+    .projects-container {
+        width: calc(100% - 5em);
+    }
+
+    .fa {
+        font-size: 1.5em;
+    }
+
+    ul {
+        padding: 1em;
+        font-size: 1.2em;
+    }
+
+    .title {
+        color: coral;
+        text-align: center;
+    }
+
+    .coral {
+        fill: coral;
+        cursor: pointer;
+    }
+
+}
+
+.component.projects {
+    background: mistyrose;
+}
