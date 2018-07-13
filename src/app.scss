@@ -2,6 +2,7 @@
 @import './components/about/about';
 @import './components/canvas/canvas';
 @import './components/experience/experience';
+@import './components/projects/projects';
 @import './components/skills/skills';
 @import './components/education/education';
 @import './components/contact/contact';
@@ -95,6 +96,64 @@ ul {
 .content-enter.content-enter-active {
     opacity: 1;
     transition: opacity 500ms ease-in;
+}
+
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
+}
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax__group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+.parallax__layer--fore {
+    transform: translateZ(1px) scale(-1);
+}
+
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+
+.parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+}
+
+.parallax__layer--deep {
+    transform: translateZ(-2px) scale(3);
+}
+
+.rotate-right-15 {
+    transform: translate(300px, 70px) rotate(15deg);
+}
+
+.rotate-left-5 {
+    transform: translate(200px, 45px) rotate(-5deg);
+
+    @media(min-width: 991px) {
+        transform: translate(0, 45px) rotate(-5deg);
+    }
+}
+
+.rotate-left-15 {
+    transform: translate(200px, 70px) rotate(-15deg);
+
+    @media(min-width: 991px) {
+        transform: translate(400px, 70px) rotate(-15deg);
+    }
 }
 
 
