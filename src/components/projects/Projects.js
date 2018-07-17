@@ -70,10 +70,31 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className='parallax__group'>
-                        <div className='parallax__layer parallax__layer--base'>
+                        <div className='parallax__layer parallax__layer--deep'>
                             <div className='slide__image'>
                                 <svg viewBox='210 0 400 425' width='100vw' height='425'>
                                     <g id='polaroid-4'>
+                                        <g className='rotate-left-5'>
+                                            <path opacity='.2'
+                                                  d='M0 2h252s-3.3 40.7-2.7 128.3C249 216 252 272 252 272s-88-2-124.3-2C91.3 270 0 272 0 272V0z'/>
+                                            <path fill='#f4f3f1' d='M0 0h245v270H0z'/>
+                                            <path fill='#4f5150' d='M10 10h225v225H10z'/>
+                                            <image x='-3' y='11' width='250' height='220'
+                                                   href='/assets/images/KYC.jpg'/>
+                                            <a href='/assets/Pranita_Naik.pdf#page=2' target='_blank'>
+                                                <text className='coral' x="10" y="250">KNOW YOUR CUSTOMER</text>
+                                            </a>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='parallax__group'>
+                        <div className='parallax__layer parallax__layer--base'>
+                            <div className='slide__image'>
+                                <svg viewBox='210 0 400 425' width='100vw' height='425'>
+                                    <g id='polaroid-5'>
                                         <g className='rotate-left-15'>
                                             <path opacity='.2'
                                                   d='M0 2h252s-3.3 40.7-2.7 128.3C249 216 252 272 252 272s-88-2-124.3-2C91.3 270 0 272 0 272V0z'/>
@@ -89,27 +110,6 @@ const Projects = () => {
                                 </svg>
                             </div>
 
-                        </div>
-                    </div>
-                    <div className='parallax__group'>
-                        <div className='parallax__layer parallax__layer--deep'>
-                            <div className='slide__image'>
-                                <svg viewBox='210 0 400 425' width='100vw' height='425'>
-                                    <g id='polaroid-5'>
-                                        <g className='rotate-left-5'>
-                                            <path opacity='.2'
-                                                  d='M0 2h252s-3.3 40.7-2.7 128.3C249 216 252 272 252 272s-88-2-124.3-2C91.3 270 0 272 0 272V0z'/>
-                                            <path fill='#f4f3f1' d='M0 0h245v270H0z'/>
-                                            <path fill='#4f5150' d='M10 10h225v225H10z'/>
-                                            <image x='-3' y='11' width='250' height='220'
-                                                   href='/assets/images/KYC.jpg'/>
-                                            <a href='/assets/Pranita_Naik.pdf#page=2' target='_blank'>
-                                                <text className='coral' x="10" y="250">KNOW YOUR CUSTOMER</text>
-                                            </a>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
                         </div>
                     </div>
                 </div>
